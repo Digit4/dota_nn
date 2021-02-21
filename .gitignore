@@ -20,3 +20,4 @@ __pycache__/
 
 # Project specific
 prev_scraped.csv
+data_params/
