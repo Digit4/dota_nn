@@ -66,11 +66,14 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'dota_nn.pipelines.DotaNnPipeline': 300,
-# }
+ITEM_PIPELINES = {
+   'dota_nn.pipelines.MatchIDPipeline': 300,
+}
 
-LOG_FILE = "debug.log"
+import logging
+
+# LOG_FILE = "debug.log"
+LOG_LEVEL = logging.INFO
 
 # FILES_STORE = 'dota_nn.data'
 # Enable and configure the AutoThrottle extension (disabled by default)

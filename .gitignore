@@ -2,6 +2,13 @@
 /data/
 .venv
 venv/
+project.egg-info/
+setup.py
+logs/
+pdb/
+build/
+twistd.pid
+dbs/
 *.log
 
 
@@ -9,3 +16,6 @@ venv/
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Project specific
+prev_scraped.csv

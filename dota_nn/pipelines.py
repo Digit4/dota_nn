@@ -18,10 +18,12 @@ class DotaNnPipeline:
         print("Spider completed process")
 
 class MatchIDPipeline:
-    def process_match_id(self, match_id, spider):
+    def process_item(self, match_id, spider):
+        self.prev_scraped_file.write(str(match_id['match_id'])+'\n')
+        logging.info(match_id['match_id'])
         return match_id
     def open_spider(self,spider):
-        print('Spider Started running in MatchID Pipeline')
+        self.prev_scraped_file = open('prev_scraped.csv','w')
     def close_spider(self, spider):
-        print("Spider completed process in MatchID Pipeline")
+        self.prev_scraped_file.close()
 
