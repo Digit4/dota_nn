@@ -4,6 +4,7 @@
 venv/
 project.egg-info/
 setup.py
+twistd.pid
 logs/
 pdb/
 build/
