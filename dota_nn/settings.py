@@ -72,7 +72,7 @@ ITEM_PIPELINES = {
 
 import logging
 
-# LOG_FILE = "debug.log"
+LOG_FILE = "debug.log"
 LOG_LEVEL = logging.INFO
 
 # FILES_STORE = 'dota_nn.data'
